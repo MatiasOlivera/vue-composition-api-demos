@@ -1,4 +1,5 @@
 import Vue from "vue";
+import "./composition-api-plugin";
 import App from "./App.vue";
 import router from "./router";
 
