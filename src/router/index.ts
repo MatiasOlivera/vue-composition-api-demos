@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Counter from "../views/Counter.vue";
+import NewPostsView from "../views/getting-data/NewPostsView.vue";
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: "/counter",
     name: "Counter",
     component: Counter
+  },
+  {
+    path: "/posts",
+    name: "Posts",
+    component: NewPostsView
   }
 ];
 
