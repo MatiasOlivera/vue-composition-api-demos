@@ -55,7 +55,7 @@ const ValidationView = defineComponent({
     const { passes, errors } = useValidator(person, personRules);
 
     function onSubmit(): void {
-      console.log("submit");
+      // send data
     }
 
     return { person, passes, errors, onSubmit };
