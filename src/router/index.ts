@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Counter from "../views/Counter.vue";
+import ValidationView from "../views/ValidationView.vue";
 import NewPostsView from "../views/getting-data/NewPostsView.vue";
 import NewPaginationView from "../views/pagination/NewPaginationView.vue";
 
@@ -27,6 +28,11 @@ const routes = [
     path: "/pagination",
     name: "Pagination",
     component: NewPaginationView
+  },
+  {
+    path: "/validation",
+    name: "Validation",
+    component: ValidationView
   }
 ];
 

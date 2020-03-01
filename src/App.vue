@@ -5,6 +5,7 @@
       <router-link :to="{ name: 'Counter' }">Counter</router-link> |
       <router-link :to="{ name: 'Posts' }">Posts</router-link> |
       <router-link :to="{ name: 'Pagination' }">Pagination</router-link> |
+      <router-link :to="{ name: 'Validation' }">Validation</router-link> |
     </div>
     <router-view />
   </div>
