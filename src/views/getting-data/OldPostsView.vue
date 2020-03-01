@@ -64,7 +64,7 @@ export default Vue.extend({
       this.posts.loading = true;
 
       try {
-        this.posts.data = await getPosts();
+        this.posts.data = await getPosts({ start: 0, limit: 5 });
       } catch (error) {
         this.posts.error = error;
       } finally {

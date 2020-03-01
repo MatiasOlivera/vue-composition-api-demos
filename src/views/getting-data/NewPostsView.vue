@@ -28,7 +28,9 @@ const NewPostsView = defineComponent({
   name: "NewPostsView",
 
   setup() {
-    const { state: posts, load: loadPosts } = usePromise(() => getPosts());
+    const { state: posts, load: loadPosts } = usePromise(() =>
+      getPosts({ start: 0, limit: 5 })
+    );
     const { state: users, load: loadUsers } = usePromise(() => getUsers());
 
     loadPosts();
